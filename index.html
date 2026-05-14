@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://font.elice.io/css?family=Elice+Digital+Coding" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Single:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Single:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+		
+		body,h1,h2,h3,p{margin:0; padding: 0}
+		footer{padding-top: 20px;padding-bottom: 300px;position: relative;}
+		.contents{width:800px; margin:auto;}
+		.center{text-align: center;}
+		.bgblack{background: black;}
+		.white{color: white;}
+		.black{color: black;}
+		.pink{color:#FF00DD;}
+		.bgpink{background-color:#FF00DD}
+		.green{color:#00FF26;}
+		.img-wrap{position: relative;}
+		.img-wrap img {width: 100%; display: block;}
+		.img-wrap .blink {position:absolute; width: 9.3%; display: block;}
+		.img-wrap .blur {width: 10%; display: block;}
+		.img-wrap .popIn{width: 10%; display: block;}
+		.img-wrap .popIn2{width: 10%; display: block;}
+		.img-wrap .popIn3{width: 5%; display: block;}
+		.img-wrap .popIn4{width: 5%; display: block;}
+		.img-wrap .popIn5{width: 5%; display: block;}
+		.img-wrap .fadeDown{ width: 7%; display: block;}
+		.img-wrap .popIn6{width: 70%; display: block;}
+		.img-wrap .floatimg{ position: absolute;
+   		 top: 72.75%; left: 9%;width: 49%; display: block;}
+   		 .img-wrap .floatimg2{ position: absolute;
+   		 top: 71.4%; left: 20%;width: 44%; display: block;}
+
+   		 .img-wrap .floatimg3{ position: absolute;
+   		 top: 85.82%; left: 62.9%;width: 25.6%; display: block;}
+
+   		 .footer-links a {
+		   padding: 0 10px;
+		   border-right: 1px solid #ccc;
+			}
+		 .footer-links a:last-child {
+			  border-right: none;
+			}
+
+
+		.footer-mid {
+		  position: absolute;
+		  display: flex;
+		  align-items: center;
+		  gap: 16px;
+		  top: 77%;
+		  left: 63%;
+		}
+
+
+		.footer-biz {
+		position: absolute;
+		  font-size: 11px;
+		  color: white;
+		  line-height: 1.8;
+		  display: flex;
+		  align-items: center;
+		  top: 87.9%;
+		  left: 77.2%;
+
+			}
+
+		.blur{ position: absolute;
+			    top: 49.65%;
+			    left: 67.5%;}
+
+		/*section1*/
+		.txt-wrap{position: absolute;top:23.94%; line-height: 0.9; font-size: 3vw; left: 23%}
+		.txt-wrap2{position: absolute;top:32.62%; line-height: 1.05; font-size: 3.25vw; left: 54.9%}
+		.txt-wrap3{position: absolute;top:36.2%; line-height: 1.05; font-size: 3.25vw; left: 67%}
+		.txt-wrap4{position: absolute;top:43.3%; line-height: 1.1; font-size: 3.25vw; left: 67.5%}
+		.txt-wrap5{position: absolute;top:49.65%; line-height: 1.1; font-size: 3.25vw; left: 44.3%; transform: rotate(-66deg);letter-spacing: 2.58rem; font-weight: bold;}
+		.txt-wrap6{position: absolute;top:56.17%; line-height: 1.1; font-size: 3.25vw; left: 26%; transform: rotate(-13.2deg); letter-spacing: 2.58rem; font-weight: bold;}
+		.txt-wrap7{position: absolute;top:65.98%; line-height: 1.21; font-size: 3.25vw; left: 63.5%;}
+		.txt-wrap8{position: absolute;top:76.79%; line-height: 1.18; font-size: 3.25vw; left: 38.9%;font-weight: bold;}
+		.txt-wrap9{position: absolute;top:37.8%; line-height: 1.05; font-size: 3.25vw; left: 67.92%}
+		.linetest{position: absolute;top:79.7%; line-height: 1.18; font-size: 3.25vw; left: 11%;font-weight: bold;}
+
+
+
+		/*section2*/
+		.txt-wrap21{position: absolute;top:13.4%; line-height: 1.05; font-size: 3.25vw; left:16.85%}
+		.txt-wrap22{position: absolute;top:14.12%; line-height: 1.05; font-size: 3.25vw; left:20.89%}
+		.txt-wrap23{position: absolute;top:14.8%; line-height: 1.05; font-size: 3.25vw; left:25.6%}
+		.txt-wrap24{position: absolute;top:15.52%; line-height: 1.05; font-size: 3.25vw; left: 30.15% ;font-weight: bold;}
+		.txt-wrap25{position: absolute;top:16.2%; line-height: 1.05; font-size: 3.25vw; left:34.7%}
+		.txt-wrap26{position: absolute;top:16.85%; line-height: 1.05; font-size: 3.25vw; left:38.5%}
+		.txt-wrap27{position: absolute;top:17.52%; line-height: 1.05; font-size: 3.25vw; left:42.5%}
+		.txt-wrap28{position: absolute;top:25.46%; line-height: 1.15; font-size: 3.25vw; left:59.2% }
+		.txt-wrap29{position: absolute;top:27%; line-height: 1.05; font-size: 3.25vw; left:67.3% ;font-weight: bold;}
+		.txt-wrap210{position: absolute;top:27.97%; line-height: 1.15; font-size: 3.25vw; left:67.5%;font-weight: bold;}
+
+		.txt-wrap211{position: absolute;top:63.2%; line-height: 1.15; font-size: 8.25vw; left:40.5%;font-weight: bold;}
+		.txt-wrap212{position: absolute;top:66.8%; line-height: 1.15; font-size: 8.25vw; left:50.5%;font-weight: bold;}
+		.txt-wrap213{position: absolute;top:70.6%; line-height: 1.15; font-size: 8.25vw; left:31.5%;font-weight: bold;}
+		.txt-wrap214{position: absolute;top:72.3%; line-height: 1.15; font-size: 8.25vw; left:27.1%;font-weight: bold;}
+		.txt-wrap215{position: absolute;top:76.6%; line-height: 1.15; font-size: 8.25vw; left:42.5%;font-weight: bold;}
+		.txt-wrap216{position: absolute;top:83.1%; line-height: 1.3; font-size: 3.25vw; left:39.5%;font-weight: bold;}
+		.txt-wrap217{position: absolute;top:85.7%; line-height: 1.3; font-size: 3.25vw; left:39.5%;font-weight: bold;}
+
+
+
+		/*section3*/
+		.txt-wrap31{position: absolute;top:13.2%; line-height: 1.05; font-size: 3.25vw; left:36.7%}
+		.txt-wrap32{position: absolute;top:14.05%; line-height: 1.05; font-size: 3.25vw; left:39.4%}
+		.txt-wrap33{position: absolute;top:14.9%; line-height: 1.05; font-size: 3.25vw; left:42.7%}
+		.txt-wrap34{position: absolute;top:15.8%; line-height: 1.05; font-size: 3.25vw; left:45.88%}
+
+		.txt-wrap35{position: absolute;top:24.4%; line-height: 1.05; font-size: 3.25vw; left:51.4%;font-weight: bold;}
+		.txt-wrap36{position: absolute;top:27.75%; line-height: 1.05; font-size: 3.25vw; left:46.3%;font-weight: bold;}
+		.txt-wrap37{position: absolute;top:30.6%; line-height: 1.05; font-size: 3.25vw; left:57.1%;font-weight: bold;}
+		.txt-wrap38{position: absolute;top:33.9%; line-height: 1.05; font-size: 3.25vw; left:62.35%;font-weight: bold;}
+		.txt-wrap39{position: absolute;top:36.2%; line-height: 1.05; font-size: 3.25vw; left:52%;font-weight: bold;}
+		.txt-wrap310{position: absolute;top:37.97%; line-height: 1.05; font-size: 3.25vw; left:40.2%;font-weight: bold;}
+		.txt-wrap311{position: absolute;top:40.37%; line-height: 1.05; font-size: 3.25vw; left:50.5%;font-weight: bold;}
+		.txt-wrap312{position: absolute;top:43.46%; line-height: 1.05; font-size: 3.25vw; left:57.6%;font-weight: bold;}
+
+		.txt-wrap313{position: absolute;top:56.35%; line-height: 1.05; font-size: 3.25vw; left:40.1%; transform: rotate(-34deg);}
+		.txt-wrap314{position: absolute;top:60.8%; line-height: 1.05; font-size: 3.25vw; left:46.1%; transform: rotate(15deg);}
+		.txt-wrap315{position: absolute;top:72.8%; line-height: 1.05; font-size: 3.25vw; left:44.5%; transform: rotate(-56deg);}
+		.txt-wrap316{position: absolute;top:73.8%; line-height: 1.05; font-size: 3.25vw; left:45.4%; transform: rotate(-56deg);}
+		.txt-wrap317{position: absolute;top:80.35%; line-height: 1.05; font-size: 3.25vw; left:15.5%;font-weight: bold;  transform: rotate(-30deg);}
+		.txt-wrap318{position: absolute;top:84.97%; line-height: 1.05; font-size: 3.25vw; left:5%;font-weight: bold; transform: rotate(-24deg);}
+		.txt-wrap319{position: absolute;top:89.9%; line-height: 1.05; font-size: 3.25vw; left:34%;transform: rotate(-31deg);}
+		.txt-wrap320{position: absolute;top:97%; line-height: 1.05; font-size: 3.25vw; left:40.2%; transform: rotate(-37deg);}
+
+
+		/*section4*/
+		.txt-wrap41{position: absolute;top:9.5%; line-height: 1.05; font-size: 3.25vw; left:42%}
+		.txt-wrap42{position: absolute;top:13.16%; line-height: 1.05; font-size: 3.25vw; left:59.8%}
+		.txt-wrap43{position: absolute;top:15.84%; line-height: 1.05; font-size: 3.25vw; left:53.3%}
+
+
+		.txt-wrap44{position: absolute;top:23.25%; line-height: 1.05; font-size: 3.25vw; left:29.6% ;transform: rotate(41deg);}
+		.txt-wrap45{position: absolute;top:23%; line-height: 1.05; font-size: 3.25vw; left:49%;transform: rotate(-49deg);}
+
+
+		.txt-wrap46{position: absolute;top:67.7%; line-height: 1.05; font-size: 3.25vw; left:66.5%}
+
+
+		.txt-wrap47{position: absolute;top:82.44%; line-height: 1.05; font-size: 4.25vw; left:45.5%;font-weight: bold;}
+		.txt-wrap48{position: absolute;top:88.48%; line-height: 1.05; font-size: 4.25vw; left:45.5%;font-weight: bold;}
+		.txt-wrap49{position: absolute;top:94.55%; line-height: 1.05; font-size: 4.25vw; left:45.5%;font-weight: bold;}
+
+
+		/*section5*/
+		.txt-wrap51{position: absolute;top:26.4%; line-height: 1.05; font-size: 3.25vw; left:36.5%; font-weight: bold;}
+
+
+		.footertxt{position: absolute; top:6%; left: 2.7%; font-size: 2.3vw}
+
+
+
+		/*font*/
+		.coding-font {font-family: 'Elice Digital Coding', bold;}
+		.noto-sans-kr-<uniquifier> {
+		  font-family: "Noto Sans KR", sans-serif;
+		  font-optical-sizing: auto;
+		  font-weight: <weight>;
+		  font-style: normal;
+		}
+
+
+		/*animation*/
+		@keyframes popIn {
+	    0%   { transform: scale(1);   opacity: 1; }
+	    60%  { transform: scale(1.3); opacity: 1; } 
+	    100% { transform: scale(1);   opacity: 1; }  
+		}
+		.scale-motion {
+		    position: absolute;
+		    top: 54.7%;
+		    left: 71.8%;
+		    width: 20%;      
+		    
+		    opacity: 0;
+		    transform-origin: center;
+		}
+
+		.scale-motion.active {
+		    animation: popIn 0.8s ease forwards;
+		}
+
+
+
+
+		@keyframes popIn2 {
+	    0%   { transform: scale(1);   opacity: 1; }
+	    60%  { transform: scale(1.5); opacity: 1; }  
+	    100% { transform: scale(1);   opacity: 1; }  
+		}
+		.scale-motion2 {
+		    position: absolute;
+		    top: 58.9%;
+		    left: 71.8%;
+		    width: 20%;      
+		    
+		    opacity: 0;
+		    transform-origin: center;
+		}
+
+		.scale-motion2.active {
+		    animation: popIn2 0.8s ease forwards;
+		}
+
+
+
+		@keyframes popIn3 {
+	    0%   { transform: scale(1);   opacity: 1; }
+	    60%  { transform: scale(1.5); opacity: 1; }  
+	    100% { transform: scale(1);   opacity: 1; }  
+		}
+		.scale-motion3 {
+		    position: absolute;
+		    top: 65.9%;
+		    left: 19.3%;
+		    transform-origin: center;
+		}
+
+		.scale-motion3.active {
+		    animation: popIn3 0.8s ease forwards;
+		}
+
+
+		@keyframes popIn4 {
+	    0%   { transform: scale(1);   opacity: 1; }
+	    60%  { transform: scale(2); opacity: 1; }  
+	    100% { transform: scale(1);   opacity: 1; }  
+		}
+		.scale-motion4 {
+		    position: absolute;
+		    top: 69.2%;
+		    left: 19.3%;
+		    transform-origin: center;
+		}
+
+		.scale-motion4.active {
+		    animation: popIn4 0.8s ease forwards;
+		}
+
+
+
+		@keyframes popIn5 {
+	    0%   { transform: scale(1);   opacity: 1; }
+	    60%  { transform: scale(1.7); opacity: 1; }  
+	    100% { transform: scale(1);   opacity: 1; }  
+		}
+		.scale-motion5 {
+		    position: absolute;
+		    top: 76.7%;
+		    left: 23.4%;
+		    transform-origin: center;
+		}
+
+		.scale-motion5.active {
+		    animation: popIn5 0.8s ease forwards;
+		}
+
+
+
+		@keyframes popIn6 {
+	    0%   { transform: scale(1);   opacity: 1; }
+	    60%  { transform: scale(1.3); opacity: 1; }  
+	    100% { transform: scale(1);   opacity: 1; }  
+		}
+		.scale-motion6 {
+		    position: absolute;
+		    top: 76.9%;
+		    left: 16.44%;
+		    transform-origin: center;
+		}
+
+		.scale-motion6.active {
+		    animation: popIn6 0.8s ease forwards infinite;
+		}
+
+
+
+		@keyframes popIn7 {
+	    0%   { transform: scale(1);   opacity: 1; }
+	    60%  { transform: scale(1.4); opacity: 1; }  
+	    100% { transform: scale(1);   opacity: 1; }  		}
+		.scale-motion7 {
+		    position: absolute;
+		    top: 82.9%;
+		    left: 16.44%;
+		    transform-origin: center;
+		}
+
+		.scale-motion7.active {
+		    animation: popIn7 0.8s ease forwards infinite;
+		}
+
+
+
+		@keyframes popIn8 {
+	    0%   { transform: scale(1);   opacity: 1; }
+	    60%  { transform: scale(1.5); opacity: 1; }  
+	    100% { transform: scale(1);   opacity: 1; }  
+		}
+		.scale-motion8 {
+		    position: absolute;
+		    top: 89%;
+		    left: 16.44%;
+		    transform-origin: center;
+		}
+
+		.scale-motion8.active {
+		    animation: popIn5 0.8s ease forwards infinite;
+		}
+
+
+		@keyframes textPop {
+	    0%   { transform: scale(1); opacity: 1; }
+	    60%  { transform: scale(1.4); opacity: 1; }
+	    100% { transform: scale(1); opacity: 1; }
+		}
+
+		.text-scale-motion {
+		    transform-origin: center;
+		}
+
+		.text-scale-motion.active {
+		    animation: textPop 0.8s ease forwards;
+		}
+
+
+
+
+		@keyframes float317 {
+	    0%   { transform: rotate(-30deg) translateY(0px); }
+	    50%  { transform: rotate(-30deg) translateY(-20px); }  
+	    100% { transform: rotate(-30deg) translateY(0px); }
+		}
+
+		.float317 {
+		    animation: float317 2s ease-in-out infinite;  
+		}		
+
+
+
+		@keyframes float318 {
+	    0%   { transform: rotate(-24deg) translateY(0px); }
+	    50%  { transform: rotate(-24deg) translateY(-20px); }  
+	    100% { transform: rotate(-24deg) translateY(0px); }
+		}
+
+		.float318 {
+		    animation: float318 2s ease-in-out infinite;  
+		}
+
+
+		@keyframes float319 {
+	    0%   { transform: rotate(-31deg) translateY(0px); }
+	    50%  { transform: rotate(-31deg) translateY(-20px); }  
+	    100% { transform: rotate(-31deg) translateY(0px); }
+		}
+
+		.float319 {
+		    animation: float319 2s ease-in-out infinite;  
+		}
+
+
+
+		@keyframes float320 {
+	    0%   { transform: rotate(-37deg) translateY(0px); }
+	    50%  { transform: rotate(-37deg) translateY(-20px); }  
+	    100% { transform: rotate(-37deg) translateY(0px); }
+		}
+
+		.float320 {
+		    animation: float320 2s ease-in-out infinite;  
+		}
+
+
+
+		@keyframes floatImg {
+	    0%   { transform: translateY(0px); }
+	    50%  { transform: translateY(-30px); } 
+	    100% { transform: translateY(0px); }
+		}
+
+		.float-img {
+		    animation: floatImg 2s ease-in-out infinite;
+		}
+
+
+
+
+
+		@keyframes fadeDownScale {
+	    0%   { transform: translateY(0px)  scale(1);   opacity: 1; }
+	    10%   { transform: translateY(0px)  scale(1);   opacity: 1; }
+	    80% { transform: translateY(250px) scale(1.5); opacity: 1; }
+	    100% { transform: translateY(400px) scale(1.8); opacity: 0; }
+		}
+
+		.fade-down-scale {
+		    position: absolute;
+		    top: 24.8%;
+		    left: 48.6%;
+		    transform-origin: center;
+		   
+		}
+		.fade-down-scale.active {
+	    animation: fadeDownScale 1.5s ease forwards;
+		}
+
+
+
+
+
+
+		@keyframes blink {
+		   0%   { opacity: 1; }
+		   40%  { opacity: 1; } 
+		   50%  { opacity: 0; } 
+		   60%  { opacity: 1; } 
+		   100% { opacity: 1; }
+			}
+			.blink {
+			    position: absolute;
+			    top: 2.5%;
+			    left: 65%;
+			    animation: blink 1s infinite;
+				}
+
+		.scroll-motion {
+			    position: absolute;
+			    top: 50.5%;        
+			    left: 34.8%;
+			    opacity: 100;         
+			    transform: rotate(-66deg) translateX(700px) translateY(-50px);  
+			    transition: opacity 0.6s ease, transform 2s ease;  
+			}
+
+					
+		.scroll-motion.active {
+			position: absolute;
+		    opacity: 1;
+		    transform: rotate(-66deg) translateX(0px)  translateY(0px);  
+			}
+
+
+		.letter-motion {
+			position: absolute;
+		    letter-spacing: 0rem;       
+		    opacity: 0;
+		    transform: rotate(-13.2deg);
+		    transition: letter-spacing 1s ease, opacity 0.6s ease;
+			}
+
+		
+		.letter-motion.active {
+			position: absolute;
+		    letter-spacing: 2.4rem;   
+		    opacity: 1;
+		    transform: rotate(-13.2deg);
+		}
+
+		.line-motion {
+		    position: absolute;
+		    background-color: #FF00DD;
+		    width: 65%;               
+		    height: 0.05%;                
+		    opacity: 1;              
+		    transform-origin: left;
+		    transform: rotate(27deg) scaleX(0);
+		    transition: transform 1.5s ease, opacity 0.5s ease; 
+		    
+		    
+		    top: 79.75%; 
+		    left: 11%;
+		}
+
+		
+		.line-motion.active {
+		             
+		    opacity: 1;
+		    transform: rotate(27deg) scaleX(1)
+		}
+
+
+
+		.line-motion2 {
+		    position: absolute;
+		    background-color: #00FF26;  
+		    width: 65%;               
+		    height: 0.05%;               
+		    opacity: 1;               
+		    transform-origin: right;
+		    transform: rotate(-41.7deg) scaleX(0);
+		    transition: transform 1.5s ease, opacity 0.5s ease; 
+		    
+		    
+		    top: 94.67%; 
+		    left: 7.5%;
+		}
+
+		
+		.line-motion2.active {
+		              
+		    opacity: 1;
+		    transform: rotate(-41.7deg) scaleX(1)
+		}
+
+	</style>	
+	<title>웹인터</title>
+</head>
+	<script>
+	    window.addEventListener('scroll', () => {
+	        const elements = document.querySelectorAll('.scroll-motion');
+	        elements.forEach(el => {
+	            const rect = el.getBoundingClientRect();
+	            if (rect.top < window.innerHeight * 0.8) {
+	                el.classList.add('active');
+	            }
+	        });
+	    });
+	</script>
+	<script>
+		window.addEventListener('scroll', () => {
+    document.querySelectorAll('.letter-motion, .line-motion, .line-motion2, .scale-motion,.scale-motion2, .scale-motion3,.scale-motion4,.scale-motion5, .text-scale-motion,.fade-down-scale, .scale-motion6,.scale-motion7,.scale-motion8' ).forEach(el => {
+        if (el.getBoundingClientRect().top < window.innerHeight * 0.8) {
+            el.classList.add('active');
+        }
+    });
+});
+	</script>
+<body>
+	<section class="">
+		<div class="img-wrap">
+				<img src="section1-notext.png">
+				<img src="blinkdot1.png" class="blink">
+				<img src="blur1.png" class="blur line-motion">
+			<div class="txt-wrap coding-font" >
+				<h2>FOLLOW<br>THE<br>BALL!</h2>
+			</div>
+			<div class="txt-wrap2 white">
+				<p>나<br>를</p>
+			</div>
+			<div class="txt-wrap3 white">
+				<p>따<br>라<br>와<br>요<br>
+			</div>
+			<div class="txt-wrap9 white">
+				!
+			</div>
+			<div class="txt-wrap4 white">
+				 <p>나는</p>
+			</div>
+			<div class="txt-wrap5 scroll-motion pink">
+			    <p>이렇게</p>
+			</div>
+			<div class="txt-wrap6 letter-motion white">
+				<p>늘어날 수도</p>
+			</div>
+			<div class="txt-wrap7 black">
+				<p>많<br>은<br>것<br>들<br>을</p>
+			</div>
+			<div class="txt-wrap8 pink">  
+				<p>이<br>을<br>수<br>도</p>
+			</div>
+			<div class="line-motion">
+				
+			</div>
+			<div class="line-motion2">
+				
+			</div>
+		</div>		
+	</section>
+		<div class="img-wrap">
+			<img src="section2.png">
+			<img src="popIn1.png" class="popIn scale-motion">
+			<img src="popIn1.png" class="popIn2 scale-motion2">
+			<img src="popIn1.png" class="popIn3 scale-motion3">
+			<img src="popIn1.png" class="popIn4 scale-motion4">
+			<img src="popIn1.png" class="popIn5 scale-motion5">
+			<div class="txt-wrap21 white">
+				<p>똑</p>
+			</div>
+			<div class="txt-wrap22 white">
+				<p>같</p>
+			</div>
+			<div class="txt-wrap23 white">
+				<p>은</p>
+			</div>
+			<div class="txt-wrap24 ">
+				<p>것</p>
+			</div>
+			<div class="txt-wrap25 white">
+				<p>들</p>
+			</div>
+			<div class="txt-wrap26 white">
+				<p>사</p>
+			</div>
+			<div class="txt-wrap27 white">
+				<p>이</p>
+			</div>
+			<div class="txt-wrap28 white">
+				<p>특<br>별<br>한</p>
+			</div>
+			<div class="txt-wrap29 ">
+				<p>것</p>
+			</div>
+			<div class="txt-wrap210 white">
+				<p>이<br>될<br>수<br>도</p>
+			</div>
+			<div class="txt-wrap211 pink">
+				<p>둥</p>
+			</div>
+			<div class="txt-wrap212 green">
+				<p>둥</p>
+			</div>
+			<div class="txt-wrap213 pink">
+				<p>둥</p>
+			</div>
+			<div class="txt-wrap214 green">
+				<p>둥</p>
+			</div>
+			<div class="txt-wrap215 pink">
+				<p>둥</p>
+			</div>
+			<div class="txt-wrap216 text-scale-motion pink">
+				<p>리<br>듬<br>을</p>
+			</div>
+			<div class="txt-wrap217 text-scale-motion pink">
+				<p>타<br>며</p>
+			</div>
+		</div>
+	<section>
+		<div class="img-wrap">
+			<img src="section3.png">
+			<img src="wind1.png" class="floatimg float-img">
+			<img src="wind2.png" class="floatimg2 float-img">
+			<img src="wind3.png" class="floatimg3 float-img">
+			<div class="txt-wrap31 white">
+				<p>신</p>
+			</div>
+			<div class="txt-wrap32 white">
+				<p>명</p>
+			</div>
+			<div class="txt-wrap33 white">
+				<p>나</p>
+			</div>
+			<div class="txt-wrap34 white">
+				<p>게</p>
+			</div>
+			<div class="txt-wrap35 white">
+				<p>춤</p>
+			</div>
+			<div class="txt-wrap36 white">
+				<p>을</p>
+			</div>
+			<div class="txt-wrap37 white">
+				<p>출</p>
+			</div>
+			<div class="txt-wrap38 white">
+				<p>수</p>
+			</div>
+			<div class="txt-wrap39 white">
+				<p>도</p>
+			</div>
+			<div class="txt-wrap310 white">
+				<p>있</p>
+			</div>
+			<div class="txt-wrap311 white">
+				<p>죠</p>
+			</div>
+			<div class="txt-wrap312 white">
+				<p>!</p>
+			</div>
+			<div class="txt-wrap313 ">
+				<p>잠시</p>
+			</div>
+			<div class="txt-wrap314 ">
+				<p>몸을 맡겨요</p>
+			</div>
+			<div class="txt-wrap315 ">
+				<p>나를</p>
+			</div>
+			<div class="txt-wrap316 ">
+				<p>따라</p>
+			</div>
+			<div class="txt-wrap317 float317 ">
+				<p>바람을</p>
+			</div>
+			<div class="txt-wrap318 float318">
+				<p>타요</p>
+			</div>
+			<div class="txt-wrap319 float319">
+				<p>바람이</p>
+			</div>
+			<div class="txt-wrap320 float320">
+				<p>느껴지시나요?</p>
+			</div>
+		</div>
+		
+	</section>
+	<section>
+		<div class="img-wrap">
+			<img src="section4.png">
+			<img src="popIn1.png" class="fadeDown fade-down-scale">
+			<img src="popIn3.png" class="popIn6 scale-motion6 ">
+			<img src="popIn3.png" class="popIn6 scale-motion7 ">
+			<img src="popIn3.png" class="popIn6 scale-motion8 ">
+			<div class="txt-wrap41 white">
+				<p>바람을</p>
+			</div>
+			<div class="txt-wrap42 white">
+				<p>타고보는</p>
+			</div>
+			<div class="txt-wrap43 white">
+				<p>야경은 어때요?</p>
+			</div>
+			<div class="txt-wrap44 white">
+				<p>아니면 건물 위에서</p>
+			</div>
+			<div class="txt-wrap45 white">
+				<p>내려다보는 풍경은요?</p>
+			</div>
+			<div class="txt-wrap46">
+				<p>왁!</p>
+			</div>
+			<div class="txt-wrap47 white">
+				<p>뛰어요!</p>
+			</div>
+			<div class="txt-wrap48 white">
+				<p>뛰어요!</p>
+			</div>
+			<div class="txt-wrap49 white">
+				<p>뛰어요!</p>
+			</div>
+		</div>
+	</section>
+	<section>
+		<div class="img-wrap">
+			<img src="section5.png">
+			<div class="txt-wrap51">
+				<p>깔리고 싶지 않으면요!</p>
+			</div>
+	</section>
+	<footer class="bgpink white">
+	  <div class="footer-mid">
+	    <span>Copyright © 2026 조윤하. 모든 권리 보유.</span>
+	    <nav class="footer-links">
+	      <a >개인정보 처리방침</a>
+	      <a >이용약관</a>
+	      <a >법적 고지</a>
+	    </nav>
+	  </div>
+
+	  <!-- 3. 사업자 정보 -->
+	  <div class="footer-biz" >
+	    instagram: @osyuio | mail: mgjstoto@gmail.com | phone:010-1234-5678
+	  </div>
+	  <div class="coding-font footertxt">
+	  	Follow The BALL!
+	  </div>
+	 
+	  </footer>
+</body>
+</html>
